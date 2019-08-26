@@ -60,6 +60,11 @@ body {
   border: solid black 1px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   height: 100px;
   background-color: #505d65;
@@ -70,10 +75,6 @@ header nav {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   border: solid black 1px;
-}
-header a {
-  text-decoration: none;
-  color: black;
 }
 
 .header_logo {
@@ -93,6 +94,9 @@ main {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+main section {
+  margin: 10px 0px;
+}
 main #sectionOne {
   border: solid black 1px;
   background-color: #778187;
@@ -101,15 +105,45 @@ main #sectionTwo {
   border: solid black 1px;
   display: grid;
   grid-template-rows: 150px 150px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
-main .sectionTwoTop {
+main .sectionTwoUp {
   display: grid;
   grid-column: 1/4;
   border: solid black 1px;
 }
-main #sectionThree {
+main .sectionTwoArticle {
   border: solid black 1px;
+}
+main .sectionTwoDown {
+  display: flex;
+  justify-content: center;
+  background-color: #9ea5a9;
+}
+main .articleWrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  background-color: #778187;
+}
+main #sectionThree {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  border: solid black 1px;
+  background-color: #b1b7ba;
+}
+main #sectionThree .sectionThreeTitle {
+  display: flex;
+  justify-content: center;
+}
+main #sectionThree #sectionThreeBoxes {
+  display: flex;
+  justify-content: center;
+}
+main #sectionThree .sectionThreeBottom {
+  display: flex;
+  justify-content: center;
 }
 main #sectionFour {
   border: solid black 1px;

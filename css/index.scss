@@ -57,6 +57,11 @@ body {
   border: solid black 1px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   height: 100px;
   background-color: #505d65;
@@ -69,18 +74,14 @@ header {
     border: solid black 1px;
   }
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
 }
 
 .header_logo {
-  border: solid black 1px;
+  border: $black_border;
 }
 
 .header_list  {
-  border: solid black 1px;
+  border: $black_border;
 
   ul {
     display: flex;
@@ -90,9 +91,13 @@ header {
 
 
 main {
-  border: solid black 1px;
+  border: $black_border;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  section {
+    margin: 20px 0px;
+  }
 
   #sectionOne {
     border: $black_border;
@@ -103,21 +108,61 @@ main {
     border: $black_border;
     display: grid;
     grid-template-rows: 150px 150px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
-  .sectionTwoTop {
+  .sectionTwoUp {
     display: grid;
-    grid-column: 1/4;
+    grid-column: 1 / 4;
     border: $black_border;
   }
+
+  .sectionTwoArticle {
+    border: $black_border;
+  }
+
+  .sectionTwoDown {
+    display: flex;
+    justify-content: center;
+    background-color: #9ea5a9;
+  }
+
+  .articleWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    background-color: #778187;
+  }
+
 
   #sectionThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
     border: $black_border;
+    background-color: #b1b7ba;
+
+    .sectionThreeTitle {
+      display: flex;
+      justify-content: center;
+    }
+
+    #sectionThreeBoxes {
+      display: flex;
+      justify-content: center;
+    }
+
+    .sectionThreeBottom {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   #sectionFour {
     border: $black_border;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr;
   }
 }
 
