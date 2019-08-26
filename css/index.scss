@@ -58,8 +58,11 @@ body {
 }
 
 header {
+  height: 100px;
+  background-color: #505d65;
 
   nav {
+    height: 70px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -88,12 +91,24 @@ header {
 
 main {
   border: solid black 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   #sectionOne {
     border: $black_border;
+    background-color: #778187
   }
 
   #sectionTwo {
+    border: $black_border;
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sectionTwoTop {
+    display: grid;
+    grid-column: 1/4;
     border: $black_border;
   }
 
