@@ -78,10 +78,15 @@ header {
 
 .header_logo {
 	display: flex;
+	align-items: center;
+	justify-content: center;
   border: $black_border;
 }
 
 .header_list  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
   border: $black_border;
 
   ul {
@@ -101,9 +106,9 @@ main {
   }
 
   #sectionOne {
-    border: solid green 1px;
+		border: $black_border;
 		height: 100px;
-    background-color: #778187;
+    background-color: #b1b7ba;
 
 		h1 {
 			display: flex;
@@ -117,6 +122,7 @@ main {
     display: grid;
     grid-template-rows: 150px 150px;
     grid-template-columns: 1fr;
+		background-color: #b1b7ba;
   }
 
   .sectionTwoUp {
@@ -133,6 +139,9 @@ main {
 
   .sectionTwoArticle {
     border: $black_border;
+		display: flex;
+		align-items: center;
+		justify-content: center;
   }
 
   .sectionTwoDown {
@@ -191,6 +200,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-columns: 1fr;
+		background-color: #b1b7ba;
 
 		#sectionFourBoxes {
 			display: flex;
@@ -213,6 +223,7 @@ main {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			background-color: #778187;
 		}
 
 		.sectionFourTitle {
@@ -235,6 +246,7 @@ main {
 
 		.sectionFourBottom {
 
+
 			a, p {
 				display: flex;
 				align-self: center;
@@ -242,6 +254,7 @@ main {
 				flex-wrap: wrap;
 				margin: 20px;
 				border: $black_border;
+				background-color: #778187;
 			}
 		}
   }
@@ -254,6 +267,7 @@ footer {
 	grid-template-columns: 1fr 1fr 1fr;
 	height: 280px;
   border: $black_border;
+	background-color: #b1b7ba;
 
 	#footerLeft, #footerRight, #footerCenter {
 		display: flex;
@@ -261,5 +275,6 @@ footer {
 		justify-content: center;
 		height: 200px;
 		border: $black_border;
+		background-color: #778187;
 	}
 }
