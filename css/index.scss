@@ -135,7 +135,6 @@ main {
     background-color: #778187;
   }
 
-
   #sectionThree {
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
@@ -156,14 +155,54 @@ main {
       display: flex;
       justify-content: center;
     }
+
+		.sectionThreeBox {
+			border: $black_border;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 264px;
+		}
+
+		#sectionThreeLastBox {
+			display: grid;
+			grid-column: 2/3;
+		}
   }
 
   #sectionFour {
     border: $black_border;
     display: grid;
     grid-template-rows: 1fr 2fr 2fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+
+	#sectionFourBoxes {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sectionFourBoxWrapper {
+		display: grid;
+		grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+		width: 200%;
+		border: $black_border;
+	}
+
+	.sectionFourBox {
+		border: $black_border;
+		height: 165px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sectionFourTitle {
+		display: grid;
+		grid-column: 1/3;
+	}
 }
 
 footer {

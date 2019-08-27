@@ -95,7 +95,7 @@ main {
   margin-bottom: 10px;
 }
 main section {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 main #sectionOne {
   border: solid black 1px;
@@ -145,8 +145,45 @@ main #sectionThree .sectionThreeBottom {
   display: flex;
   justify-content: center;
 }
+main #sectionThree .sectionThreeBox {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 264px;
+}
+main #sectionThree #sectionThreeLastBox {
+  display: grid;
+  grid-column: 2/3;
+}
 main #sectionFour {
   border: solid black 1px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+}
+main #sectionFourBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionFourBoxWrapper {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  width: 200%;
+  border: solid black 1px;
+}
+main .sectionFourBox {
+  border: solid black 1px;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionFourTitle {
+  display: grid;
+  grid-column: 1/3;
 }
 
 footer {
